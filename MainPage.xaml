@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Foto.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Exemplo de Câmera"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+            <Label
+                Text="Tire uma foto..."
+                FontSize="16"
+                HorizontalOptions="Center"
+                />
+
+            <Image
+                x:Name="ImagemCapturada"
+                HeightRequest="350"
+                BackgroundColor="LightGray"
+                />
+
+            <Button
+                Text="Tirar Foto"
+                HeightRequest="55"
+                x:Name="ButtonTirarFoto"
+                Clicked="ButtonTirarFoto_Clicked"
+                />
+            
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
